@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="task.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join GitHub</title>
+  <link rel="stylesheet" href="signup.css">
 </head>
 <body>
-    <div class="container">
-       
-        <form action="">
-            <div class="join"> 
-                <p id="p1">join github</p>
-            </div>
-            <h2>First, Lets Create Your User Account</h2>
-            <Label><h4>UserName <span>*</span></h4></Label>
-            <input type="text">
-            <Label><h4>email <span>*</span></h4></Label>
-            <input type="email">
-            <label for=""><h4>Password <span>*</span></h4></label>
-            <input type="password">
-            <p>make sure its atleasr 15characters or atleast 8 charaters including number and a lowercase letter.</p>
-            <H3><h4>Email prefrences</h4></H3>
-            <input type="checkbox" id="check">Send me occasional product updates, annoincements, and offers <br>
-            <button>create Account</button>
-            <p>By creating account, you agree to the terms of service. <br> for more information about Github's privacy practices, serr the  <a href="">Github privacy statement</a> . We'll occasionally sent you account-related emails</p>
-        </form>
-    </div>
-    
+  <div class="container">
+    <p style="text-align: center;">join GitHub</p> 
+    <form>
+      <h2 style="text-align: center;">First, let's create your user account.</h2>
+      <div class="form-group">
+        <label for="username">Username <span  style="color:red">*</span></label>
+        <input type="text" id="username" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email <span style="color:red">*</span></label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password <span  style="color:red">*</span></label>
+        <input type="password" id="password" minlength="8" required>
+      </div>
+      <p class="password-requirements">Make sure it's at least 8 characters, including a number and a lowercase letter.</p>
+      <h4>Email preferences</h4>
+      <div class="form-group checkbox">
+        <input type="checkbox" id="product-updates">
+        <label for="product-updates">Send me occasional product updates, announcements, and offers</label>
+      </div>
+      <button type="submit">Create account</button>
+      <p class="terms-of-service">By clicking “Sign up for GitHub”, you agree to our <a href="#">terms of service</a> and <a href="#">privacy statement</a>. We’ll occasionally send you account related emails.</p>
+    </form>
+  </div>
 </body>
 </html>
